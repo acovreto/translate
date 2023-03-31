@@ -111,3 +111,20 @@ function TranslateHtmlHandler(code) {
       .classList.add("language__img_active");
   }
 }
+const btn = document.querySelector(".btn-video");
+const videoContainer = document.querySelector(".video-container");
+const close = document.querySelector(".close");
+
+btn.addEventListener("click", () => {
+  videoContainer.classList.add("show");
+});
+
+close.addEventListener("click", () => {
+  videoContainer.classList.remove("show");
+  const video = document.getElementById("video");
+  console.log(video);
+ 
+  var iframe = document.querySelector("iframe");
+  var temp = iframe.src;
+  iframe.src = temp; 
+});
