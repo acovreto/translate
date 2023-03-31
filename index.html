@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="mk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu:wght@300&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lng.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="translate.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61ed1c50ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Loader-->
+    <div class="loader" id="loader">
+      <div class="gear-box">
+        <img class="gear1" src="gear.svg" alt="gear" />
+        <img class="gear2" src="gear.svg" alt="gear" />
+      </div>
+      <div class="gear-box box1">
+        <img class="gear1" src="gear.svg" alt="gear" />
+        <img class="gear2" src="gear.svg" alt="gear" />
+      </div>
+      <div class="gear-box box2">
+        <img class="gear1" src="gear.svg" alt="gear" />
+        <img class="gear2" src="gear.svg" alt="gear" />
+      </div>
+    </div>
+    <!--Close Loader-->
+
+    <!-- Navbar-->
+    <header class="row container-navbar">
+      <a href="#" class="logo row">
+        <img src="logo1.png" alt="" />
+      </a>
+      <nav class="navigation row">
+        <ul class="row">
+          <li><a href="#hero" scrollto>Почетна</a></li>
+          <li><a href="#">Струки</a></li>
+          <li>
+            <a href="#">Настава</a>
+            <div class="drop-down">
+              <ul>
+                <li><a href="#">Раководен тим</a></li>
+                <li><a href="#">Стручни активи</a></li>
+                <li><a href="#">Административен кадар</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Вести</a></li>
+          <li>
+            <a href="#">Проекти</a>
+            <div class="drop-down">
+              <ul>
+                <li><a href="#">Балкан Јуниор</a></li>
+                <li>
+                  <a href="#"
+                    >Еразмус проекти<i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="inner-drop-down">
+                    <ul>
+                      <li><a href="#">Digital VET</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"
+                    >E twinning проекти<i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                  <div class="inner-drop-down1">
+                    <ul>
+                      <li><a href="#">No Other World</a></li>
+                      <li><a href="#">Natural Disaters</a></li>
+                      <li><a href="#">Funkcije u STEM-u</a></li>
+                      <li><a href="#">Mathematics thematics</a></li>
+                      <li><a href="#">1.5 Degree: Together possible</a></li>
+                      <li><a href="#">Where are my footprints</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="drop-text">
+            <a href="#">Галерија</a>
+            <div class="drop-down">
+              <ul>
+                <li><a href="#">Доделување дипломи 2020-2021</a></li>
+                <li><a href="#">Балкан Јуниор 2019</a></li>
+                <li><a href="#">Феријална пракса</a></li>
+                <li><a href="#">Практична настава</a></li>
+                <li><a href="#">Натпревари</a></li>
+                <li><a href="#">Презентации на центарот</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">За нас</a></li>
+          <li>
+            <div class="language">
+              <img
+                src="lang/lang__mk.png"
+                alt="ru"
+                data-google-lang="mk"
+                class="language__img"
+                width="24"
+                height="15"
+              />
+              <img
+                src="lang/lang__en.png"
+                alt="en"
+                data-google-lang="en"
+                class="language__img"
+                width="24"
+                height="15"
+              />
+              <img
+                src="lang/lang__de.png"
+                alt="de"
+                data-google-lang="de"
+                class="language__img"
+                width="24"
+                height="15"
+              />
+              <img
+                src="lang/lang__sq.png"
+                alt="de"
+                data-google-lang="sq"
+                class="language__img"
+                width="24"
+                height="15"
+              />
+              <img
+                src="lang/lang__tr.png"
+                alt="de"
+                data-google-lang="tr"
+                class="language__img"
+                width="24"
+                height="15"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav id="mobilen-navbar">
+        <div class="menu1">
+          <div>
+            <img src="Oemuc.png" class="logo3" />
+            <ul>
+              <li><a href="glaven.html">Почетна</a></li>
+              <li><a href="#">Вести</a></li>
+              <li><a href="#">Галерија</a></li>
+              <li><a href="zanas.html">За Нас</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Раководен тим</a></li>
+              <li><a href="#">Стручни активи</a></li>
+              <li><a href="elektro.html">Електротехничка струка</a></li>
+              <li><a href="masinskastruka.html">Машинска струка</a></li>
+              <li><a href="sobr.html">Сообраќајна струка</a></li>
+              <li><a href="licniuslugi.html">Лични услуги</a></li>
+            </ul>
+            <ul class="social-media">
+              <li>
+                <a
+                  href="https://www.facebook.com/OЕМУЦ-Св-Наум-Охридски-Охрид-509105895795971%22%3E"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container1">
+          <img src="logo1.png" class="logo5" />
+          <i class="fa-solid fa-bars" id="menu-btn"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Close Navbar-->
+
+    <!-- Pocetna-->
+    <section class="hero row container" id="hero">
+      <div class="poceten-naslov">
+        <h1>ОЕМУЦ</h1>
+        <p>„Св.Наум Охридски“</p>
+        <div class="modal">
+          <a href="#" class="btn-video"
+            ><i class="bi bi-play-circle-fill"></i>Видео</a
+          >
+          <div class="video-container">
+            <span class="close">&#10006;</span>
+            <!-- <video id="video" controls>
+              <source
+                src="https://www.youtube.com/watch?v=ADamQZ7GEb0"
+                type="video/mp4"
+              />
+            </video> -->
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ADamQZ7GEb0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="animacii">
+        <img class="zapcanik" src="1.png" />
+        <img class="grom" src="2.png" />
+      </div>
+    </section>
+    <!-- Close Pocetna-->
+
+    <!-- Partneri-->
+
+    <section class="partneri">
+      <logo-slider>
+        <div>
+          <img src="img-firmi/Kostal.png" />
+          <img src="img-firmi/Digital.png" />
+          <img class="learnica" src="img-firmi/LTH-logo2.png" />
+          <img src="img-firmi/ODW.png" />
+          <img class="magna" src="img-firmi/Magna.png" />
+          <img src="img-firmi/Logoevn.png" />
+          <img src="img-firmi/delegacija_1_1.png" />
+        </div>
+
+        <div>
+          <img src="img-firmi/Kostal.png" />
+          <img src="img-firmi/Digital.png" />
+          <img class="learnica" src="img-firmi/LTH-logo2.png" />
+          <img src="img-firmi/ODW.png" />
+          <img class="magna" src="img-firmi/Magna.png" />
+          <img src="img-firmi/Logoevn.png" />
+          <img src="img-firmi/delegacija_1_1.png" />
+        </div>
+      </logo-slider>
+    </section>
+    <!-- Close Partneri-->
+
+    <!-- Struki-->
+    <section class="struki">
+      <div class="naslov">
+        <h2>Струки</h2>
+      </div>
+      <div class="container-struki">
+        <div class="box" style="--clr: #fdc734">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="desktop"></ion-icon>
+            </div>
+            <div class="text">
+              <h3>Електротехничка струка</h3>
+              <a href="#">Дознај повеќе</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr: #fdc734">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="cog"></ion-icon>
+            </div>
+            <div class="text">
+              <h3>
+                Машинска<br />
+                струка
+              </h3>
+              <a href="#">Дознај повеќе</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr: #fdc734">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="car-sport"></ion-icon>
+            </div>
+            <div class="text">
+              <h3>
+                Сообраќајна<br />
+                струка
+              </h3>
+              <a href="#">Дознај повеќе</a>
+            </div>
+          </div>
+        </div>
+        <div class="box" style="--clr: #fdc734">
+          <div class="content">
+            <div class="icon">
+              <ion-icon name="brush"></ion-icon>
+            </div>
+            <div class="text">
+              <h3>
+                Лични<br />
+                услуги
+              </h3>
+              <a href="#">Дознај повеќе</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Close Struki-->
+
+    <!--Za nas-->
+
+    <section class="zanas">
+      <div class="naslov">
+        <h2>За нас</h2>
+      </div>
+      <div class="content-zanas">
+        <div class="tekst">
+          <p>
+            Развојниот пат на Општинскиот Електромашински Училиштен Центар „Св.
+            Наум Охридски“ од Охрид започнува во учебната 1966/1967 година како
+            резултат на стопанската ориентација на општина Охрид. Центарот беше
+            формиран со цел да подготвува кадри од металската насока за
+            потребите на металската индустрија во градот како што беа фабриката
+            „Братство“, фабриката за автомобилски делови и алати „Херој Тоза
+            Драговиќ“ и фабриката „Езерка“.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="container-znas">
+          <i class="fa-solid fa-user"></i>
+          <span class="num" data-val="800">0</span>
+          <span class="text">Ученици</span>
+        </div>
+        <div class="container-znas">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span class="num" data-val="60">0</span>
+          <span class="text">Професори</span>
+        </div>
+        <div class="container-znas">
+          <i class="fa-solid fa-book"></i>
+          <span class="num" data-val="13">0</span>
+          <span class="text">Струки</span>
+        </div>
+      </div>
+      <div class="povekje">
+        <a href="#">Дознај повеќе<ion-icon name="caret-forward"></ion-icon></a>
+      </div>
+    </section>
+
+    <!--Close Za nas-->
+
+    <!--Vesti-->
+    <section class="vesti">
+      <div class="blog-section">
+        <div class="section-content blog">
+          <div class="naslov">
+            <h2>Вести</h2>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="img-section">
+                <img src="Memorandum-4-370x193.jpg" />
+              </div>
+              <div class="article">
+                <h4>
+                  ПОТПИШАН МЕМОРАНДУМ ЗА СОРАБОТКА ПОМЕЃУ ОЕМУЦ „СВ. НАУМ
+                  ОХРИДСКИ“ И УНИВЕРЗИТЕТОТ „СВ. АПОСТОЛ ПАВЛЕ“
+                </h4>
+                <p>
+                  На 15.03.2023 година ОЕМУЦ „Св. Наум Охридски“ претставен од
+                  директорот Сашо Недески и Универзитетот за информатички науки
+                  и технологии „Св. Апостол Павле“, претставен од проректорот
+                  Устијана Речкоска Шикоска потпишаа Меморандум за соработка.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a href="" class="button"
+                  >Дознај Повеќе<ion-icon name="caret-forward"></ion-icon
+                ></a>
+              </div>
+              <div class="posted-date">
+                <p>Објавено на 15 Март 2023</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-section">
+                <img src="Mladinska-2-370x193.jpg" />
+              </div>
+              <div class="article">
+                <h4>
+                  РАБОТИЛНИЦА НА ТЕМА „ЛОКАЛНА ДИСКУСИЈА НАМЕНЕТА ЗА
+                  СРЕДНОШКОЛЦИ“
+                </h4>
+                <p>
+                  На ден 15.3.2023 г. членовите на Младинската организација при
+                  ОЕМУЦ „Св. Наум Охридски“ беа поканети да присуствуваат на
+                  работилница на тема: ,,Локална дискусија наменета за
+                  средношколците”. На оваа работилница беа поканети младинци од
+                  сите средни училишта меѓу кои и младинците од нашиот училиштен
+                  центар.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a href="" class="button"
+                  >Дознај Повеќе<ion-icon name="caret-forward"></ion-icon
+                ></a>
+              </div>
+              <div class="posted-date">
+                <p>Објавено на 15 Март 2023</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-section">
+                <img src="Akcija-1-370x193.jpg" />
+              </div>
+              <div class="article">
+                <h4>
+                  ЕКО АКЦИЈА ЗА РАСЧИСТУВАЊЕ НА ОТПАДОТ ВО РЕЧНОТО КОРИТО НА
+                  РЕКАТА СУШИЦА
+                </h4>
+                <p>
+                  На ден 14.3.2023 г. учениците од нашето училиште кои
+                  истовремено се и членови на Младинската организација при OЕМУЦ
+                  „Св. Наум Охридски“ волонтерски помогнаа при расчистување на
+                  отпадот во речното корито на реката Сушица. Енхелеус Лихнид,
+                  ви благодариме за поканата и за можноста да учествуваме во
+                  оваа еко-акција. Сите заедно можеме да делуваме за почист и
+                  поубав Охрид.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a href="" class="button"
+                  >Дознај Повеќе<ion-icon name="caret-forward"></ion-icon
+                ></a>
+              </div>
+              <div class="posted-date">
+                <p>Објавено на 14 Март 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Close Vesti-->
+    <script src="script.js"></script>
+    \
+  </body>
+</html>
